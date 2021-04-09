@@ -1916,11 +1916,11 @@ h6 {
 }
 .couple-half .desc-groom {
   padding-right: 180px;
-  text-align: right;
+  text-align: center;
 }
 .couple-half .desc-bride {
   padding-left: 180px;
-  text-align: left;
+  text-align: center;
 }
 @media screen and (max-width: 480px) {
   .couple-half .groom,
