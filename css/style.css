@@ -170,7 +170,7 @@ h6 {
   float: left;
   display: block;
   font-size: 24px;
-  padding-left: 0;
+  padding-left: 10px;
   color: #fff;
   font-family: "Clicker Script", cursive;
 }
@@ -444,7 +444,7 @@ h6 {
 @media screen and (max-width: 768px) {
   .qbootstrap-cover .display-tc h2,
   .video-hero .display-tc h2 {
-    font-size: 60px;
+    font-size: 46px;
   }
 }
 .qbootstrap-cover .display-tc p,
@@ -1727,45 +1727,59 @@ h6 {
   display: none;
 }
 
-#box {
+/* #box {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   height: 100%;
-  background-color: black;
+  background-color: transparent;
   z-index: 9999;
-}
-
-#box .btn {
-  position: absolute;
-  bottom: 10%;
-  left: 25%;
-  right: 25%;
-  width: 50%;
-  height: 60px;
-  background-color: #ff847c;
-  color: white;
-  font-size: 25px;
-  z-index: 9999;
-}
-
-.id {
-  position: absolute;
+} */
+#pembuka {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 50%;
-  background: rgba(0, 0, 0, 0.03);
+  height: 100%;
+  z-index: 2000;
+  background-repeat: cover;
+}
+
+#pembuka .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .box {
+  position: fixed;
+  background-color: rgba(109, 98, 98, 0.5);
 }
 
 .id h1 {
   color: #fff;
-  font-size: 30px;
-  font-family: arial;
+  font-size: 50px;
   text-align: center;
+  margin: 10px 10px;
+}
+
+.id div {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.box a {
+  background-color: #ff847c;
+  color: white;
+  font-size: 18px;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 /* FH5CO */
@@ -1794,6 +1808,16 @@ h6 {
   font-size: 24px;
   font-family: "Source Sans Pro", Arial, sans-serif;
   padding-bottom: 30px;
+  color: #333333;
+}
+
+@media screen and (max-width: 768px) {
+  .fh5co-heading h3 {
+    font-size: 16px;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    padding-bottom: 20px;
+    color: #333333;
+  }
 }
 
 .couple-wrap {
@@ -1938,7 +1962,7 @@ h6 {
   .fh5co-heading .ayat-desc {
     padding-top: 12px;
     margin: 0 30px 20px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
   }
 }
