@@ -50,14 +50,13 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
+
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
-
 
 </head>
 
@@ -77,6 +76,7 @@
 							<li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
 							<li><a href="#" data-nav-section="groom-bride"><span>Groom &amp; Bride</span></a></li>
 							<li><a href="#" data-nav-section="when-where"><span>When &amp; Where</span></a></li>
+							<li><a href="#" data-nav-section="gallery"><span>Gallery</span></a></li>
 
 						</ul>
 					</div>
@@ -104,6 +104,7 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<!-- <div id="qbootstrap-couple" class="qbootstrap-section-gray">
@@ -142,7 +143,7 @@
 	</div> -->
 
 	<!-- Awal Couple -->
-	<div id="fh5co-couple">
+	<div id="fh5co-couple" data-section="groom-bride">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -210,10 +211,10 @@
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<p class="countdown">
-							<span id="days"></span>
-							<span id="hours"></span>
-							<span id="minutes"></span>
-							<span id="seconds"></span>
+							<span id="days" class="beda"></span>
+							<span id="hours" class="beda"></span>
+							<span id="minutes" class="beda"></span>
+							<span id="seconds" class="beda"></span>
 						</p>
 					</div>
 				</div>
@@ -221,70 +222,20 @@
 		</div>
 	</div>
 
-	<!-- <div id="qbootstrap-groom-bride" data-section="groom-bride">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="col-md-12 text-center section-heading svg-sm-2 colored">
-						<img src="images/flaticon/svg/002-wedding-couple.svg" class="svg" alt="">
-						<h2>Groom &amp; Bride</h2>
-						<p>وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا
-							وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِقَوْمٍ يَتَفَكَّرُونَ
-						</p>
-						<p>Artinya: Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan
-							untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia
-							menjadikan di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu
-							benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir. (QS. Ar-Rum Ayat
-							21).</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="couple groom text-center animate-box">
-						<img src="images/bride.png" class="img-responsive" alt="">
-						<div class="desc">
-							<h2>Dyah Puspita</h2>
-							<p>Anak Pertama Dari Bapak Agus Priyatno &amp; Muryamah</p>
-							<ul class="social social-circle">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-instagram"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="couple bride text-center animate-box">
-						<img src="images/groom.png" class="img-responsive" alt="">
-						<div class="desc">
-							<h2>Fauzan Hafizh</h2>
-							<p>Anak Pertama Dari Bapak Tata Sapta &amp; Yeti Juarti</p>
-							<ul class="social social-circle">
-								<li><a href="#"><i class="icon-twitter"></i></a></li>
-								<li><a href="#"><i class="icon-facebook"></i></a></li>
-								<li><a href="#"><i class="icon-instagram"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-
-
 	<div id="qbootstrap-when-where" data-section="when-where">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2">
 					<div class="col-md-12 text-center section-heading svg-sm colored">
-						<img src="images/flaticon/svg/005-two.svg" class="svg" alt="">
-						<h2>Ceremony &amp; Party</h2>
+						<img src="images/flaticon/svg/005-two.svg" class="svg"
+							alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+						<h2>Wedding Event</h2>
 						<div class="row">
 							<div class="col-md-10 col-md-offset-1 subtext">
-								<h3>Far far away, behind the word mountains, far from the countries Vokalia and
-									Consonantia, there live the blind texts.</h3>
+								<p>It is an honor and happiness for us if you are willing to attend to give blessings
+									for the bride and groom.
+								</p>
+								<p>Jazakumullahu Khairan Wa Barakallahu Fiikum</p>
 							</div>
 						</div>
 					</div>
@@ -293,79 +244,179 @@
 			<div class="row row-bottom-padded-md">
 				<div class="col-md-6 text-center animate-box">
 					<div class="wedding-events">
-						<div class="ceremony-bg" style="background-image: url(images/wed-ceremony.jpg);"></div>
+						<!-- <div class="ceremony-bg" style="background-image: url(images/wed-ceremony.jpg);"></div> -->
 						<div class="desc">
-							<h3>Wedding Ceremony</h3>
+							<h3 class="judul">AKAD</h3>
 							<div class="row">
-								<div class="col-md-2 col-md-push-5">
+								<!-- <div class="col-md-2 col-md-push-5">
 									<div class="icon-tip">
 										<span class="icon"><i class="icon-heart-o"></i></span>
 									</div>
-								</div>
-								<div class="col-md-5 col-md-pull-1">
+								</div> -->
+								<div class="col-md-6">
 									<div class="date">
 										<i class="icon-calendar"></i>
 										<span>Saturday</span>
-										<span>12 June 2021</span>
+										<span>12 Jun. 2021</span>
 									</div>
 								</div>
-								<div class="col-md-5 col-md-pull-1">
+								<div class="col-md-6">
 									<div class="date">
 										<i class="icon-clock2"></i>
-										<span>01:00 PM</span>
-										<span>03:00 PM</span>
+										<span>09:00 AM</span>
+										<span>11:00 AM</span>
 									</div>
 								</div>
 							</div>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-								there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
-								the Semantics, a large language ocean.</p>
-							<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
+							<h3 class="judul" style="color: rgba(0, 0, 0, 0.7)">Taman Hummus Bintaro</h3>
+							<p>Alamat : Jl. Jend. Sudirman, Bintaro Sektor 9 No.78, Pondok Pucung, Pondok Aren, South
+								Tangerang City</p>
+							<p><a href="https://goo.gl/maps/qNyPSwevwQvQShZW6" target="_blank"
+									class="btn btn-primary btn-sm"><i class="bi bi-geo-alt"></i>Google
+									Maps : Taman Hummuss Bintaro</a></p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 text-center animate-box">
 					<div class="wedding-events">
-						<div class="ceremony-bg" style="background-image: url(images/wed-party.jpg);"></div>
+						<!-- <div class="ceremony-bg" style="background-image: url(images/wed-party.jpg);"></div> -->
 						<div class="desc">
-							<h3>Wedding Party</h3>
+							<h3 class="judul">RESEPSI</h3>
 							<div class="row">
-								<div class="col-md-2 col-md-push-5">
+								<!-- <div class="col-md-2 col-md-push-5">
 									<div class="icon-tip">
 										<span class="icon"><i class="icon-heart-o"></i></span>
 									</div>
-								</div>
-								<div class="col-md-5 col-md-pull-1">
+								</div> -->
+								<h3 class="judul" style="font-size: 24px; color: rgba(0, 0, 0, 0.7) ;">Session 1</h3>
+								<div class="col-md-6">
 									<div class="date">
 										<i class="icon-calendar"></i>
 										<span>Saturday</span>
-										<span>12 June 2021</span>
+										<span>12 Jun. 2021</span>
 									</div>
 								</div>
-								<div class="col-md-5 col-md-pull-1">
+								<div class="col-md-6">
 									<div class="date">
 										<i class="icon-clock2"></i>
-										<span>04:00 PM</span>
-										<span>07:00 PM</span>
+										<span>11:00 AM</span>
+										<span>13:00 PM</span>
 									</div>
 								</div>
 							</div>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-								there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
-								the Semantics, a large language ocean.</p>
-							<p><a href="#" class="btn btn-primary btn-sm">Learn more</a></p>
+							<div class="row">
+								<!-- <div class="col-md-2 col-md-push-5">
+									<div class="icon-tip">
+										<span class="icon"><i class="icon-heart-o"></i></span>
+									</div>
+								</div> -->
+								<h3 class="judul" style="font-size: 24px; color:rgba(0, 0, 0, 0.7);">Session 2</h3>
+								<div class="col-md-6">
+									<div class="date">
+										<i class="icon-calendar"></i>
+										<span>Saturday</span>
+										<span>12 Jun. 2021</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="date">
+										<i class="icon-clock2"></i>
+										<span>13:00 PM</span>
+										<span>15:00 PM</span>
+									</div>
+								</div>
+							</div>
+							<h3 class="judul" style="color: rgba(0, 0, 0, 0.7)">Taman Hummus Bintaro</h3>
+							<p>Alamat : Jl. Jend. Sudirman, Bintaro Sektor 9 No.78, Pondok Pucung, Pondok Aren, South
+								Tangerang City</p>
+							<p>
+								<a href="https://goo.gl/maps/qNyPSwevwQvQShZW6" target="_blank"
+									class="btn btn-primary btn-sm"><i class="bi bi-geo-alt"></i>Google
+									Maps : Taman Hummuss Bintaro</a>
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div id="map" class="qbootstrap-map"></div>
+					<div id="map" class="qbootstrap-map">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
+
+	<div id="qbootstrap-gallery" data-section="gallery">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-12 text-center section-heading svg-sm colored">
+						<img src="images/flaticon/svg/005-two.svg" class="svg"
+							alt="Free HTML5 Bootstrap Template by QBootstrap.com">
+						<h2>Our Best Memories</h2>
+						<div class="row">
+							<div class="col-md-10 col-md-offset-1 subtext">
+								<p>Love is like a friendship caught on fire. In the beginning a flame, very pretty,
+									often hot
+									and fierce, but still only light and flickering. As love grows older, our hearts
+									mature and
+									our love becomes as coals, deep-burning and unquenchable.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup image-popup" href="images/g1.jpg"><img src="images/g1.jpg"
+								class="img-responsive"></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/g2.jpg"><img src="images/g2.jpg"
+								class="img-responsive"></a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/g3.jpg"><img src="images/g3.jpg"
+								class="img-responsive"></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/g4.jpg"><img src="images/g4.jpg"
+								class="img-responsive"></a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/g6.jpg"><img src="images/g6.jpg"
+								class="img-responsive"></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/g7.jpg"><img src="images/g7.jpg"
+								class="img-responsive"></a>
+					</div>
+
+
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/g9.jpg"><img src="images/g9.jpg"
+								class="img-responsive"></a>
+					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/g8.jpg"><img src="images/g8.jpg"
+								class="img-responsive"></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
 
 	<footer id="footer" role="contentinfo">
 		<div class="container">
@@ -375,7 +426,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-md-12 text-center">
 					<ul class="social social-circle">
 						<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -384,15 +435,19 @@
 						<li><a href="#"><i class="icon-instagram"></i></a></li>
 					</ul>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</footer>
 
+
+
+
+
 	<!-- AUDIO -->
 
-	<audio id="Audio" loop>
+	<audio id="audio" loop>
 		<source src="music/pamungkastothebone.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
+
 	</audio>
 
 	<section id="pembuka" style="background-image: url(images/bg5.jpeg); background-size: cover; ">
@@ -415,15 +470,24 @@
 
 
 	<script type="text/javascript">
-		var myAudio = document.getElementById("Audio");
+		var myAudio = document.getElementById("audio");
 		var isPlaying = false;
 		function togglePlay() {
 			myAudio.play();
 			terakhir = document.querySelector('#pembuka');
 			terakhir.classList.add('hide');
 
-		};
-
+			function playPause() {
+				if (isPlaying == true) {
+					isPlaying = false;
+					myAudio.pause();
+				}
+				else {
+					isPlaying = false;
+					myAudio.play;
+				}
+			}
+		}
 	</script>
 
 

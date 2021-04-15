@@ -169,7 +169,7 @@ h6 {
 #qbootstrap-header .navbar-brand {
   float: left;
   display: block;
-  font-size: 24px;
+  font-size: 30px;
   padding-left: 10px;
   color: #fff;
   font-family: "Clicker Script", cursive;
@@ -187,6 +187,12 @@ h6 {
 #qbootstrap-header.navbar-fixed-top .navbar-brand {
   color: #ff847c;
 }
+.judul {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #393e46;
+  font-size: 30px;
+}
+
 #qbootstrap-header.navbar-fixed-top #navbar li a {
   color: rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.3s;
@@ -220,6 +226,10 @@ h6 {
     padding-right: 0px;
     padding-left: 0px;
   }
+
+  .judul {
+    font-size: 24px;
+  }
 }
 #qbootstrap-header .navbar-default .brand-slogan {
   margin: 28px 0 0 15px;
@@ -241,7 +251,7 @@ h6 {
   float: left;
   width: 100%;
   padding-bottom: 50px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   clear: both;
 }
 .section-heading.svg-sm-2 .svg {
@@ -297,7 +307,7 @@ h6 {
 #qbootstrap-gallery,
 #qbootstrap-testimonials,
 #qbootstrap-press {
-  padding: 7em 0;
+  padding: 2em 0;
 }
 @media screen and (max-width: 480px) {
   #qbootstrap-couple,
@@ -310,7 +320,7 @@ h6 {
   #qbootstrap-gallery,
   #qbootstrap-testimonials,
   #qbootstrap-press {
-    padding: 5em 0;
+    padding: 2em 0;
   }
 }
 
@@ -706,18 +716,36 @@ h6 {
   background: rgba(0, 0, 0, 0.4);
 }
 #qbootstrap-countdown .countdown {
-  margin-bottom: 0;
-  font-size: 80px;
+  margin-bottom: 30px;
+  font-size: 24px;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
 }
+
+@media screen and (max-width: 480px) {
+  #qbootstrap-countdown .countdown {
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #fff;
+  }
+  #qbootstrap-countdown .countdown span {
+    margin: 0 2px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+  }
+}
+
 #qbootstrap-countdown .countdown span {
-  margin: 0 30px;
+  margin: 0 5px;
   display: inline-block;
-  font-family: "Clicker Script", cursive;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  /* background-color: rgba(255, 100, 29, 0.747); */
 }
+
 #qbootstrap-countdown .countdown small {
-  display: block;
-  font-size: 14px;
+  /* display: inline; */
+  font-size: 18px;
   font-family: "Source Sans Pro", Arial, sans-serif;
   letter-spacing: 10px;
   text-transform: uppercase;
@@ -1785,7 +1813,7 @@ h6 {
 /* FH5CO */
 
 #fh5co-couple {
-  padding: 7em 0;
+  padding: 3em 0;
   clear: both;
 }
 
@@ -1796,7 +1824,7 @@ h6 {
 }
 
 .fh5co-heading h2 {
-  font-size: 46px;
+  font-size: 56px;
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
@@ -1827,7 +1855,7 @@ h6 {
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 30px;
   }
 
@@ -1967,4 +1995,87 @@ h6 {
   }
 }
 
+a .button {
+  padding: 10px 20px;
+  font-size: 22px;
+  line-height: 40px;
+  min-width: 50px;
+  color: rgb(26, 16, 16);
+  border-radius: 100%;
+  text-align: center;
+}
+
+#fh5co-event .event-wrap {
+  border: 2px solid rgba(138, 32, 32, 0.5);
+  background: rgba(235, 71, 71, 0.1);
+  padding: 30px;
+  width: 100%;
+  float: left;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-event .event-wrap {
+    margin-bottom: 10px;
+  }
+}
+
+#fh5co-event .event-wrap h3 {
+  font-size: 20px;
+  color: rgb(17, 14, 14);
+  border-bottom: 1px solid rgba(238, 65, 65, 0.5);
+  display: block;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#fh5co-event .event-wrap p,
+#fh5co-event .event-wrap span {
+  display: block;
+  color: rgba(14, 9, 9, 0.8);
+}
+
+#fh5co-event .event-wrap p {
+  font-weight: bold;
+}
+
+#fh5co-event .event-wrap i {
+  color: rgba(14, 9, 9, 0.8);
+  font-size: 20px;
+}
+
+#fh5co-event .event-wrap .event-col {
+  width: 50%;
+  float: left;
+  margin-bottom: 30px;
+}
+
+#fh5co-event,
+.fh5co-bg {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 30px 0;
+}
+
+.fh5co-bg {
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.event-wrap a {
+  background-color: #ff847c;
+  color: white;
+  font-size: 18px;
+  align-items: center;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=style.css.map */

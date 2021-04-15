@@ -253,10 +253,10 @@
     // + minutes + "Minutes " + seconds + "Seconds ";
 
     // Display the result in an element with id="demo"
-    document.getElementById("days").innerHTML = days + " <small>days</small>";
-    document.getElementById("hours").innerHTML = hours + " <small>hours</small> ";
-    document.getElementById("minutes").innerHTML = minutes + " <small>minutes</small> ";
-    document.getElementById("seconds").innerHTML = seconds + " <small>seconds</small> ";
+    document.getElementById("days").innerHTML = days + " " + "Days";
+    document.getElementById("hours").innerHTML = hours + " " + "Hours";
+    document.getElementById("minutes").innerHTML = minutes + " " + "Minutes";
+    document.getElementById("seconds").innerHTML = seconds + " " + "Seconds";
 
     // If the count down is finished, write some text
     if (distance < 0) {
@@ -268,6 +268,20 @@
   var bgVideo = function () {
     $(".player").mb_YTPlayer();
   };
+
+  // modals
+  // $(".list").scroll(function () {
+  //   var hT = $(".list").offset().top,
+  //     hH = $(".list").outerHeight(),
+  //     wH = $(window).height(),
+  //     wS = $(this).scrollTop();
+  //   console.log(hT - wH, wS);
+  //   if (wS > hT + hH - wH && $("#searchModalForm").attr("displayed") === "false") {
+  //     $("#searchModalForm").modal("show");
+  //     $("#searchModalForm").attr("displayed", "true");
+  //   }
+  // });
+  // Akhir modals
 
   // Document on load.
   $(function () {
