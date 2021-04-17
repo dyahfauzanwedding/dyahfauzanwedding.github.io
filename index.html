@@ -51,6 +51,10 @@
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
+	<!-- font awesome -->
+	<link rel="stylesheet" href="css/all.css">
+
+
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -448,10 +452,15 @@
 
 	<!-- AUDIO -->
 
+
+
 	<audio id="audio" loop>
 		<source src="music/pamungkastothebone.mp3" type="audio/mpeg">
-
 	</audio>
+	<a class="floating-btn" id="playPauseBTN" onclick="playPause()">&#x23f8;</a>
+	<!-- &nbsp;
+	&nbsp; -->
+	<!-- <a class="floating-btn" onclick="stop()">&#9611;</a> -->
 
 	<section id="pembuka" style="background-image: url(images/bg5.jpeg); background-size: cover; ">
 
@@ -474,6 +483,7 @@
 
 	<script type="text/javascript">
 		var myAudio = document.getElementById("audio");
+		var playPauseBTN = document.getElementById("playPauseBTN");
 		var isPlaying = false;
 		function togglePlay() {
 			myAudio.play();
@@ -488,8 +498,33 @@
 				else {
 					isPlaying = false;
 					myAudio.play;
+
+
 				}
 			}
+		}
+
+		var audio = document.getElementById("audio");
+		var playPauseBTN = document.getElementById("playPauseBTN");
+		var count = 0;
+
+		function playPause() {
+			if (count == 0) {
+				count = 1;
+				audio.pause();
+				playPauseBTN.innerHTML = "&#9658;";
+			} else {
+				count = 0;
+				audio.play();
+				playPauseBTN.innerHTML = "&#9208;";
+			}
+		}
+
+		function stop() {
+			playPause();
+			audio.pause();
+			audio.currentTime = 0;
+			playPauseBTN.innerHTML = "Play &#9658;";
 		}
 	</script>
 

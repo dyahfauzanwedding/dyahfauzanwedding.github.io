@@ -1748,7 +1748,7 @@ h6 {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 10000;
+  z-index: 11000;
 }
 
 .hide {
@@ -2078,4 +2078,24 @@ a .button {
   align-items: center;
   margin-bottom: 20px;
 }
+
+a.floating-btn {
+  width: 52px;
+  height: 52px;
+  padding: 2px 0;
+  background: #ff847c;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 26px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  bottom: 50%;
+  right: 20px;
+  z-index: 10;
+}
+
 /*# sourceMappingURL=style.css.map */
