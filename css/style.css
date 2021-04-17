@@ -2098,4 +2098,13 @@ a.floating-btn {
   z-index: 10;
 }
 
+@media screen and (max-width: 768px) {
+  a.floating-btn {
+    width: 32px;
+    height: 32px;
+    right: 2px;
+    font-size: 16px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
