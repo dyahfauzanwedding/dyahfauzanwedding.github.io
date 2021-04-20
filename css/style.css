@@ -276,7 +276,7 @@ h6 {
 }
 @media screen and (max-width: 768px) {
   .section-heading h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 .section-heading h3 {
@@ -1209,7 +1209,7 @@ h6 {
   z-index: -1;
 }
 .wedding-events .desc h3 {
-  font-size: 40px;
+  font-size: 28px;
   color: #ff847c;
   display: block;
   margin-bottom: 40px;
