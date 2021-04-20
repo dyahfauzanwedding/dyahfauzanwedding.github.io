@@ -255,7 +255,7 @@ h6 {
   clear: both;
 }
 .section-heading.svg-sm-2 .svg {
-  height: 150px;
+  height: 300px;
   margin-bottom: 0;
   padding: 0;
 }
@@ -2107,4 +2107,56 @@ a.floating-btn {
   }
 }
 
+.covid-box {
+  padding: 3em 0;
+  background: #f2f2f2;
+}
+.covid-box .full-flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.covid-box .title {
+  font-size: 30px;
+  color: #180403;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  text-transform: inherit;
+  display: inline-block;
+  line-height: 2em;
+  border-bottom: 1px solid #000000;
+}
+.covid-box .desc-box {
+  width: 500px;
+}
+.covid-box .desc-box p {
+  text-align: center;
+  font-size: 18px;
+}
+.covid-box .list-grid-box {
+  width: 700px;
+}
+.covid-box .list-grid-box .cover-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  min-height: 50px;
+}
+.covid-box .list-grid-box .cover-box .icon {
+  width: 40px;
+}
+.covid-box .list-grid-box .cover-box span {
+  padding-left: 10px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1115px) {
+  .covid-box .list-grid-box .cover-box .icon {
+    width: 15%;
+  }
+  .covid-box .list-grid-box .cover-box span {
+    font-size: 10px;
+    line-height: 1.5em;
+  }
+}
 /*# sourceMappingURL=style.css.map */
