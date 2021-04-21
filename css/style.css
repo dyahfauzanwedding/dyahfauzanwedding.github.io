@@ -2108,7 +2108,7 @@ a.floating-btn {
 }
 
 .covid-box {
-  padding: 3em 0;
+  padding: 2em 0;
   background: #f2f2f2;
 }
 .covid-box .full-flex {
@@ -2125,6 +2125,19 @@ a.floating-btn {
   line-height: 2em;
   border-bottom: 1px solid #000000;
 }
+
+@media screen and (max-width: 768px) {
+  .covid-box .title {
+    font-size: 26px;
+    color: #180403;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    text-transform: inherit;
+    display: inline-block;
+    line-height: 2em;
+    border-bottom: 1px solid #000000;
+  }
+}
+
 .covid-box .desc-box {
   width: 500px;
 }
